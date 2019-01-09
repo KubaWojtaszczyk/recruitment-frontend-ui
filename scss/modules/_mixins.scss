@@ -1,0 +1,24 @@
+
+@mixin bars {
+  content: " ";
+  display: inline-block;
+  margin: 0 0 8px 20px;
+  border-radius: 5px;
+  text-shadow: none;
+  @content;
+}
+
+@mixin shadow{
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+@mixin tablet {
+  @media all and (min-width: 740px){
+    @content;
+  }
+}
+@mixin desktop {
+  @media all and (min-width: 980px){
+    @content;
+  }
+}

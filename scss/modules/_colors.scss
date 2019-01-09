@@ -1,0 +1,17 @@
+%gradient-main {
+  background: linear-gradient(to right, #3c9ee7, #3d7be2, #3f59e1, #4222dd)
+}
+
+%gradient-second {
+  background: linear-gradient(to bottom, #fff, #D0D1DA)
+}
+
+$color-default: black;
+$color-gray: #D0D1DA;
+$color-green: #6CC090;
+$color-light: #3c9ee7;
+$color-middle: #3d7be2;
+$color-darker: #3f59e1;
+$color-darkest: #4222dd;
+$color-reset: #fff;
+$color-error: orange;

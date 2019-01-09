@@ -1,0 +1,83 @@
+.header__geometric--item {
+  width: 120px;
+  position: absolute;
+  &:nth-child(1) {
+    width: 50px;
+    top: 60px;
+    right: 480px;
+    transform: rotate(-12deg);
+    .figure {
+      fill: $color-reset;
+    }
+  }
+  &:nth-child(2) {
+    width: 70px;
+    bottom: -40px;
+    right: 370px;
+    transform: rotate(-10deg);
+    .figure {
+      fill: $color-darkest;
+    }
+  }
+  &:nth-child(3) {
+    width: 190px;
+    top: 90px;
+    right: 200px;
+    transform: rotate(-10deg);
+    .figure {
+      fill: $color-reset;
+    }
+  }
+  &:nth-child(4) {
+    width: 190px;
+    top: 60px;
+    right: 0px;
+    transform: rotate(-10deg);
+    .figure {
+      fill: $color-darkest;
+      opacity: 0.2;
+    }
+  }
+  &:nth-child(5) {
+    width: 190px;
+    top: 20px;
+    right: -220px;
+    transform: rotate(-10deg);
+    .figure {
+      fill: $color-darker;
+      opacity: 0.4;
+    }
+  }
+  &:nth-child(6) {
+    width: 50px;
+    bottom: 10px;
+    right: 10px;
+    .figure {
+      fill:  $color-reset;
+    }
+  }
+}
+
+.intro__polygon {
+  position: absolute;
+  width: 74px;
+  left: 50px;
+  bottom: 20px;
+  transform: rotate(-12deg);
+  &--green{
+    left: -10px;
+    bottom: 90px;
+    transform: rotate(-15deg);
+  }
+  .figure {
+    position: relative;
+    &--main-blue {
+      fill: $color-darkest;
+    }
+    &--green {
+      fill: $color-green;
+    }
+  }
+}
+
+
