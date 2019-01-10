@@ -3,15 +3,16 @@
 }
 
 %gradient-second {
-  background: linear-gradient(to bottom, #fff, #D0D1DA)
+  background: linear-gradient(#fff, #F5F5F5)
 }
 
-$color-default: black;
-$color-gray: #D0D1DA;
+$color-reset: #fff;
+$color-default: #000;
+$color-gray: #858585;
+$color-extras: #bfbfbf;
 $color-green: #6CC090;
 $color-light: #3c9ee7;
-$color-middle: #3d7be2;
+$color-medium: #3d7be2;
 $color-darker: #3f59e1;
 $color-darkest: #4222dd;
-$color-reset: #fff;
-$color-error: orange;
+$color-error: #ffa500;

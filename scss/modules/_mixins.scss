@@ -1,24 +1,16 @@
 
-@mixin bars {
-  content: " ";
-  display: inline-block;
-  margin: 0 0 8px 20px;
-  border-radius: 5px;
-  text-shadow: none;
+@mixin heading {
+  font-family: $main-font-bold;
+  font-size: 40px;
+  color: $color-reset;
+  margin: 50px 0 20px 0;
+  padding-top: 20px;
   @content;
 }
 
-@mixin shadow{
-  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+@mixin text {
+  color: $color-gray;
+  margin-bottom: 20px;
+  @content;
 }
 
-@mixin tablet {
-  @media all and (min-width: 740px){
-    @content;
-  }
-}
-@mixin desktop {
-  @media all and (min-width: 980px){
-    @content;
-  }
-}

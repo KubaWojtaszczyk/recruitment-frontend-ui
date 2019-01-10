@@ -1,0 +1,136 @@
+.valuation {
+ @extend %gradient-second;
+  padding-bottom: 250px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 90%);
+  &__heading {
+    position: relative;
+    @include heading;
+    color: $color-default;
+  }
+  &__text {
+    @include text;
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 30px;
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__card {
+    position: relative;
+    height: 500px;
+    background: $color-reset;
+    border-radius: 2px;
+    box-shadow: -9px 26px 57px 3px rgba(0,0,0,0.08);
+    transition: .4s;
+    margin-right: 20px;
+
+    @media (max-width: 900px) {
+      width: 50%;
+    }
+
+
+    &:hover {
+      transform: scale(1.1);
+      z-index: 10;
+    }
+    &--heading {
+
+      margin-top: 40px;
+    }
+    &--title {
+      font-family: $main-font-bold;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    &--price {
+      display: inline-block;
+      font-size: 50px;
+      color: $color-light;
+      &--second {
+        color: $color-darker;
+      }
+      &--third {
+        color: $color-darkest;
+      }
+
+      &-contact {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 40px;
+        color: $color-darkest;
+      }
+    }
+    &--sign{
+      font-size: 10px;
+      color: $color-gray;
+      position: absolute;
+      top: 110px;
+      left: 70px;
+    }
+    &--amount {
+      font-size: 10px;
+      color: $color-gray;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 0.5px solid rgba(133, 133, 133, .8);
+    }
+
+    &--list {
+      max-width: 250px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: left;
+    }
+    &--info {
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0 20px 0;
+      color: $color-gray;
+      line-height: $line-height;
+    }
+
+    &--icon {
+      margin: 5px 15px 0 0;
+      svg {
+        width: 15px;
+        .figure {
+          width: 100%;
+          fill: $color-light;
+        }
+      }
+    }
+  }
+  &__details {
+    max-width: 900px;
+    margin: 60px auto 120px 30px;
+    padding-top: 30px;
+
+    &--heading {
+      font-family: $main-font-bold;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    &--list-containter{
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &--item {
+      display: flex;
+      color: $color-gray;
+      padding: 10px 0;
+      text-align: left;
+    }
+  }
+}

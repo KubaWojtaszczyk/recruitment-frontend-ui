@@ -1,6 +1,6 @@
 .header__geometric--item {
-  width: 120px;
   position: absolute;
+  width: 120px;
   &:nth-child(1) {
     width: 50px;
     top: 60px;
@@ -79,5 +79,105 @@
     }
   }
 }
+
+.intro__triangle {
+  position: absolute;
+  width: 50px;
+  top: 5px;
+  left: 170px;
+  transform: rotate(-40deg);
+  .figure {
+    fill: $color-light;
+  }
+}
+
+.category__polygon {
+  position: absolute;
+  transform: rotate(-80deg);
+  .figure {
+    fill: $color-darkest;
+  }
+}
+
+.valuation__polygon {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  width: 70px;
+  transform: rotate(30deg);
+  z-index: -9;
+  .figure {
+    fill: $color-darkest;
+  }
+}
+
+.valuation__triangle {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 70px;
+  transform: rotate(-4deg);
+  z-index: -5;
+  .figure {
+    fill: $color-light;
+    opacity: 0.2;
+  }
+}
+
+.footer__triangle {
+  position: absolute;
+  z-index: -1;
+  &--transparent {
+    bottom: -150px;
+    left: -160px;
+    width: 150px;
+    transform: rotate(-10deg);
+    .figure {
+      fill: #EBE8FB;
+    }
+  }
+  &--small {
+    top: 0;
+    right: 100px;
+    width: 70px;
+    transform: rotate(35deg);
+    .figure {
+      fill: $color-light;
+    }
+  }
+}
+
+.footer__polygon {
+  position: absolute;
+  &--transparent {
+    bottom: -150px;
+    right: -160px;
+    width: 150px;
+    transform: rotate(-10deg);
+    .figure {
+      fill: #EEF9F3;
+    }
+  }
+
+  &--medium {
+    top: 10px;
+    left: 140px;
+    width: 80px;
+    transform: rotate(10deg);
+    .figure {
+      fill: $color-green;
+    }
+  }
+  &--small {
+    bottom: -120px;
+    right: 200px;
+    width: 70px;
+    transform: rotate(-10deg);
+    .figure {
+      fill: $color-darkest;
+    }
+  }
+}
+
 
 

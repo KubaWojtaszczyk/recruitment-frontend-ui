@@ -1,0 +1,116 @@
+.categories {
+  @extend %gradient-main;
+  margin-top: -100px;
+  padding: 100px 0;
+  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0 100%);
+  text-align: center;
+  &__gallery {
+    height: 400px;
+    margin: 100px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__header--main {
+    font-family: $main-font-bold;
+    font-size: 40px;
+    color: $color-reset;
+    margin: 50px 0 20px 0;
+    padding-top: 20px;
+  }
+  &__text--main {
+    color: $color-reset;
+    margin-bottom: 20px;
+  }
+  &__container--flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 50px;
+    &:nth-child(1) {
+      .category:nth-child(odd) {
+        margin-top: 20px;
+      }
+    }
+    &:nth-child(2) {
+      .category:nth-child(even) {
+        margin-top: 30px;
+      }
+    }
+    &:nth-child(3) {
+      margin-right: 0;
+      .category:nth-child(odd) {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__buttons {
+    position: absolute;
+    bottom: 100px;
+    right: 50%;
+  }
+  &__button {
+    border: 2px solid $color-reset;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+    }
+    &--act {
+      background-color: $color-reset;
+    }
+  }
+}
+
+.gallery__container {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  height: 300px;
+  transition: .8s;
+  transform: translateX(-680px);
+}
+
+.category {
+  position: relative;
+  margin-right: 60px;
+  margin-top: 50px;
+  padding: 30px 30px;
+  width: 250px;
+  background: $color-reset;
+  box-shadow: 0 0 16px rgba(0,0,0, .2);
+  border-radius: 4px;
+  text-align: left;
+  &:hover {
+    cursor: pointer;
+  }
+  &__heading {
+    font-family: $main-font-bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: $line-height;
+  }
+  &__text {
+    font-size: 12px;
+    color: $color-gray;
+    line-height: $line-height;
+  }
+  &__icon {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    width: 50px;
+    &--img {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      transform: translateX(-50%);
+      z-index: 9;
+    }
+  }
+}

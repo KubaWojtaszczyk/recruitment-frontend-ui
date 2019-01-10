@@ -26,7 +26,6 @@
     &--data {
       padding-top: 100px;
     }
-
   }
   &__text {
     font-family: $main-font;
@@ -57,8 +56,7 @@
       top: 170px;
     }
     &--selects{
-      bottom: 10px;
-
+      bottom: 20px;
     }
   }
   &__error-icon {
@@ -76,7 +74,7 @@
     display: block;
     width: 80px;
     height: 5px;
-    background-color: $color-gray;
+    background-color: $color-extras;
     border-radius: 3px;
     margin-bottom: 8px;
     &:nth-child(1){
@@ -93,13 +91,14 @@
   &__select {
     width: 158px;
     margin: 8px 0;
-    border: 1px solid $color-gray;
+    border: 1px solid rgba(133, 133, 133, .2);
     border-radius: 3px;
     &-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 5px;
+      margin-left: 5px;
       &--logo {
         width: 15px;
         img {
@@ -107,6 +106,7 @@
         }
       }
       p {
+        font-family: $main-font-bold;
         width: 50%;
         font-size: 10px;
         text-align: left;
@@ -115,19 +115,15 @@
         border: none;
         background: transparent;
         outline: none;
-        color: $color-gray;
+        color: $color-extras;
         cursor: pointer;
-
+        transform: rotate(180deg);
       }
     }
   }
   &__info--data {
     right: 250px;
     bottom: 300px;
-    hr {
-      border: 1px solid $color-gray;
-
-    }
   }
   &__info--stats {
     display: flex;
@@ -135,12 +131,15 @@
     padding: 5px;
     width: 220px;
     height: 60px;
-
+    &:nth-child(1) {
+      border-bottom: 0.5px solid rgba(133, 133, 133, .8);
+      margin-bottom: 10px;
+  }
     }
   &__info--name {
     font-size: 14px;
     text-align: center;
-    color: $color-gray;
+    color: $color-extras;
   }
   &__info--number {
     padding-top: 10px;
@@ -150,7 +149,7 @@
   }
   &__line {
     position: relative;
-    background: $color-gray;
+    background: $color-extras;
     width: 120px;
     height: 3px;
     margin-top: 30px;
@@ -163,7 +162,6 @@
       height: 8px;
       left: 70px;
       top: -2px;
-
     }
     &:after {
       content: '';
@@ -175,7 +173,8 @@
       top: 0;
     }
     &--dropout:before {
-      left: 20px;
+      left: 20px
+
     }
     &--dropout:after {
       width: 20px;
@@ -198,7 +197,7 @@
     }
     &--time {
       font-size: 12px;
-      color: $color-gray;
+      color: $color-extras;
       padding-bottom: 5px;
     }
     &--text {

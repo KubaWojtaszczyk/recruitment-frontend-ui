@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  padding-bottom: 80px;
+  height: 400px;
+  &__heading {
+    font-family: $main-font-bold;
+    font-size: 40px;
+  }
+  &__text {
+    color: $color-gray;
+    font-size: 16px;
+    margin: 20px 0 40px 0;
+  }
+  &__btn{
+    &--start {
+      @extend %button;
+      background-color: $color-darker;
+      color: $color-reset;
+      box-shadow: 5px 5px 6px rgba(0,0,0, .1);
+      margin-right: 10px;
+    }
+    &--read {
+      @extend %button;
+      color: $color-gray;
+      background-color: inherit;
+      border: 1px solid $color-extras;
+    }
+  }
+}

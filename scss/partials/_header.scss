@@ -1,12 +1,12 @@
 .header {
     @extend %gradient-main;
-    height: 100vh;
-    max-height: 700px;
-    margin: 0 auto;
     position: relative;
+    height: 100vh;
+    max-height: 800px;
+    margin: 0 auto;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     padding: 50px;
   .logo {
     font-size: 16px;
@@ -48,8 +48,9 @@
     &--start {
       @extend %button;
       background-color: $color-reset;
-      color: #3d7be2;
+      color: $color-darker;;
       box-shadow: 5px 5px 6px rgba(0,0,0, .1);
+      margin-right: 10px;
     }
     &--read {
       @extend %button;

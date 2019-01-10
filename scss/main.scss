@@ -4,8 +4,12 @@
 @import "modules/colors.scss";
 @import "modules/button.scss";
 @import "modules/geometric.scss";
+@import "modules/mixins.scss";
 
 //Partials
 @import "partials/header.scss";
 @import "partials/base.scss";
 @import "partials/content.scss";
+@import "partials/categories.scss";
+@import "partials/valuation.scss";
+@import "partials/footer.scss";
