@@ -1,16 +1,28 @@
 .categories {
   @extend %gradient-main;
-  margin-top: -100px;
+  margin-top: -150px;
   padding: 100px 0;
   clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0 100%);
   text-align: center;
+  @media (max-width: 1000px) {
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
+    height: 1000px;
+  }
+  .container {
+      @media(max-width: 1000px) {
+        width: 400px;
+      }
+    }
   &__gallery {
     height: 400px;
     margin: 100px 0 20px 0;
     position: relative;
     overflow: hidden;
+    @media(max-width: 1000px) {
+      height: 650px;
+      margin: 50px 0;
+    }
   }
-
   &__header--main {
     font-family: $main-font-bold;
     font-size: 40px;
@@ -26,21 +38,24 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-right: 50px;
+    margin-right: -10px;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      margin-right: 0;
+    }
     &:nth-child(1) {
       .category:nth-child(odd) {
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
     &:nth-child(2) {
       .category:nth-child(even) {
-        margin-top: 30px;
+        margin-top: 20px;
       }
     }
     &:nth-child(3) {
-      margin-right: 0;
       .category:nth-child(odd) {
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
   }
@@ -48,6 +63,9 @@
     position: absolute;
     bottom: 100px;
     right: 50%;
+    @media (max-width: 1000px) {
+      bottom: 40px;
+    }
   }
   &__button {
     border: 2px solid $color-reset;
@@ -84,6 +102,10 @@
   box-shadow: 0 0 16px rgba(0,0,0, .2);
   border-radius: 4px;
   text-align: left;
+  @media (max-width: 1000px) {
+    width: 315px;
+    margin: 0 40px 20px 0;
+  }
   &:hover {
     cursor: pointer;
   }

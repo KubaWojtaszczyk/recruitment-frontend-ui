@@ -1,3 +1,3 @@
-import slider from "./modules/slider";
+import Slider from './modules/slider.js'
 
-slider();
+const slider = new Slider ();

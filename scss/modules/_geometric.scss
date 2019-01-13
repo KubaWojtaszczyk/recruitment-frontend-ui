@@ -1,11 +1,21 @@
 .header__geometric--item {
   position: absolute;
   width: 120px;
+  @media (max-width: 600px) {
+    display: none;
+  }
   &:nth-child(1) {
     width: 50px;
     top: 60px;
     right: 480px;
     transform: rotate(-12deg);
+    @media (min-width: 1000px) and (max-width: 1030px) {
+      top: 30px;
+      right: 400px;
+    }
+    @media (max-width: 999px) {
+      display: none;
+    }
     .figure {
       fill: $color-reset;
     }
@@ -15,6 +25,9 @@
     bottom: -40px;
     right: 370px;
     transform: rotate(-10deg);
+    @media (max-width: 930px) {
+      display: none;
+    }
     .figure {
       fill: $color-darkest;
     }
@@ -24,6 +37,9 @@
     top: 90px;
     right: 200px;
     transform: rotate(-10deg);
+    @media (max-width: 910px) {
+      display: none;
+    }
     .figure {
       fill: $color-reset;
     }
@@ -31,11 +47,10 @@
   &:nth-child(4) {
     width: 190px;
     top: 60px;
-    right: 0px;
+    right: 0;
     transform: rotate(-10deg);
     .figure {
-      fill: $color-darkest;
-      opacity: 0.2;
+      fill: #5151E5;
     }
   }
   &:nth-child(5) {
@@ -44,8 +59,7 @@
     right: -220px;
     transform: rotate(-10deg);
     .figure {
-      fill: $color-darker;
-      opacity: 0.4;
+      fill: #4A34DF;
     }
   }
   &:nth-child(6) {
@@ -86,6 +100,9 @@
   top: 5px;
   left: 170px;
   transform: rotate(-40deg);
+  @media (min-width: 937px) and (max-width: 1100px) {
+    left: 220px;
+  }
   .figure {
     fill: $color-light;
   }
@@ -106,6 +123,11 @@
   width: 70px;
   transform: rotate(30deg);
   z-index: -9;
+  @media (max-width: 900px) {
+    left: 80px;
+    top: -20px;
+    width: 100px;
+  }
   .figure {
     fill: $color-darkest;
   }
@@ -118,6 +140,11 @@
   width: 70px;
   transform: rotate(-4deg);
   z-index: -5;
+  @media (max-width: 900px) {
+    bottom: -40px;
+    right: 80px;
+    width: 100px;
+  }
   .figure {
     fill: $color-light;
     opacity: 0.2;
@@ -158,12 +185,16 @@
       fill: #EEF9F3;
     }
   }
-
   &--medium {
+    position: absolute;
     top: 10px;
     left: 140px;
     width: 80px;
     transform: rotate(10deg);
+    z-index: -1;
+    @media (max-width: 930px) {
+      left: 80px;
+    }
     .figure {
       fill: $color-green;
     }
@@ -173,6 +204,7 @@
     right: 200px;
     width: 70px;
     transform: rotate(-10deg);
+    z-index: -1;
     .figure {
       fill: $color-darkest;
     }
